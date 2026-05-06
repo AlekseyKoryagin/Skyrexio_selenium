@@ -10,9 +10,9 @@ import static pages.BasePage.DOWNLOAD_DIR_PATH;
 import static users.UserFactory.withStandardPermission;
 
 @Owner("Aleksey Ivanov test@test.ru")
-@Epic(("Проверка страницы Торговый дневник терминала"))
+@Epic("Проверка страницы Торговый дневник терминала")
 public class TerminalsTradingDiaryTest extends BaseTest {
-    @Story(("Выгрузка файла Список сделок по Терминалу"))
+    @Story("Выгрузка файла Список сделок по Терминалу")
     @Severity(SeverityLevel.CRITICAL)
     @TmsLink("Skyrexio_selenium")
     @Test(description = "Проверка загрузки файла ManualTrades.xlsx")
