@@ -5,19 +5,14 @@
     <test name="Chrome">
         <parameter name="browser" value="chrome"/>
         <classes>
-
+            <class name="tests.TerminalsTradingDiaryTest"/>
         </classes>
     </test>
     <test name="Firefox">
         <parameter name="browser" value="firefox"/>
         <classes>
-
+            <class name="tests.TerminalsTradingDiaryTest"/>
         </classes>
     </test>
-    <test name="Edge">
-        <parameter name="browser" value="edge"/>
-        <classes>
 
-        </classes>
-    </test>
 </suite>
