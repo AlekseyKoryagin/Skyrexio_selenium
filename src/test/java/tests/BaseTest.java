@@ -10,6 +10,7 @@ import org.openqa.selenium.edge.*;
 import org.openqa.selenium.firefox.*;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
+import pages.HomePage;
 import pages.LoginPage;
 import pages.TerminalsTradingDiaryPage;
 import utils.TestListener;
@@ -24,6 +25,7 @@ import static pages.BasePage.DOWNLOAD_DIR_PATH;
 public class BaseTest {
     WebDriver driver;
     LoginPage loginPage;
+    HomePage homePage;
     TerminalsTradingDiaryPage terminalDiaryPage;
 
     @Step("Запуск браузера {browser}")
@@ -38,6 +40,7 @@ public class BaseTest {
 
         context.setAttribute("driver", driver);
         loginPage = new LoginPage(driver);
+        homePage = new HomePage(driver);
         terminalDiaryPage = new TerminalsTradingDiaryPage(driver);
     }
 
